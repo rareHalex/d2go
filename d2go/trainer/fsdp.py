@@ -11,7 +11,7 @@ from d2go.config import CfgNode as CN
 from d2go.modeling.modeling_hook import ModelingHook
 from d2go.registry.builtin import MODELING_HOOK_REGISTRY
 from d2go.trainer.helper import D2GO_WRAP_POLICY_REGISTRY, parse_precision_from_string
-from torch.ao.sparsity.sparsifier.utils import fqn_to_module
+from torch.ao.pruning import fqn_to_module
 from torch.cuda.amp import GradScaler
 from torch.distributed.fsdp.fully_sharded_data_parallel import (
     BackwardPrefetch,
