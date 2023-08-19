@@ -6,8 +6,7 @@ import torch
 from d2go.config import CfgNode as CN
 from detectron2.utils.file_io import PathManager
 from mobile_cv.torch.utils_pytorch import comm
-from torch.cuda._memory_viz import segment_plot, trace_plot
-
+from d2go.utils.my_memory import segment_plot, trace_plot
 logger: logging.Logger = logging.getLogger(__name__)
 
 
